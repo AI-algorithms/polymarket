@@ -1,6 +1,6 @@
 # Polymarket 量化交易平台
 
-Polymarket 预测市场量化交易系统。
+Polymarket 量化交易系统。
 
 ## 核心功能
 
@@ -112,7 +112,7 @@ streamlit run src/dashboard/app.py
 3. 点击"批量分析"
 4. 系统会自动筛选出高胜率交易者
 
-### 5. 命令行扫描（可选）
+#### 5. 命令行扫描（可选）
 ```bash
 # 创建地址列表文件
 echo "0x1234567890abcdef1234567890abcdef12345678" > addresses.txt
@@ -123,7 +123,7 @@ python main.py scan --file addresses.txt
 # 结果保存在 data/qualified_traders.json
 ```
 
-## 风险警告
+#### 风险警告
 
 ⚠️ **重要提示**：
 - 本系统仅供学习研究使用
@@ -155,14 +155,14 @@ f* = (p × b - q) / b × kelly_fraction
 - `b`: 赔率（odds）
 - `kelly_fraction`: 保守系数（0.5 = Half-Kelly）
 
-### 风险控制规则
+#### 风险控制规则
 
 1. **单笔限制**：单笔投注 ≤ 总资金 × Kelly 结果
 2. **日亏损熔断**：单日累计亏损达 MAX_DAILY_LOSS 时停止交易
 3. **用户分散**：同时跟随 5-10 个高胜率用户，避免单点依赖
 4. **流动性检查**：只投注流动性充足的市场（volume > 10k）
 
-## 技术栈
+#### 技术栈
 
 - **数据获取**：aiohttp + requests
 - **数据分析**：pandas + numpy + scipy
@@ -171,7 +171,7 @@ f* = (p × b - q) / b × kelly_fraction
 - **数据库**：PostgreSQL + SQLAlchemy
 - **测试**：pytest
 
-## 开发计划
+#### 开发计划
 
 - [x] 项目初始化
 - [x] Polymarket API 封装
@@ -184,6 +184,6 @@ f* = (p × b - q) / b × kelly_fraction
 - [ ] 回测框架
 - [ ] 单元测试覆盖
 
-## 许可证
+### 许可证
 
 MIT License
