@@ -1,0 +1,40 @@
+# Polymarket 量化交易平台依赖
+
+# Polymarket SDK
+py-clob-client>=0.20.0
+
+# 核心框架
+requests>=2.31.0
+aiohttp>=3.9.0
+pandas>=2.1.0
+numpy>=1.25.0
+
+# Web3 & 区块链
+web3>=6.11.0
+eth-account>=0.10.0
+
+# 数据分析
+scipy>=1.11.0
+scikit-learn>=1.3.0
+statsmodels>=0.14.0
+
+# 可视化
+streamlit>=1.30.0
+plotly>=5.17.0
+dash>=2.14.0
+dash-bootstrap-components>=1.5.0
+
+# 数据库
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+
+# 工具
+python-dotenv>=1.0.0
+loguru>=0.7.0
+pydantic>=2.4.0
+pytz>=2023.3
+
+# 测试
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0

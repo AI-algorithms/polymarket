@@ -1,0 +1,9 @@
+.claude
+.idea
+logs/
+.env
+tests/
+CLAUDE.md
+test_system.py
+start.sh
+venv/

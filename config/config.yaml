@@ -1,0 +1,24 @@
+# Polymarket 跟单系统配置
+
+# API 配置
+POLYMARKET_DATA_API: "https://data-api.polymarket.com"
+POLYMARKET_CLOB_API: "https://clob.polymarket.com"
+POLYMARKET_GAMMA_API: "https://gamma-api.polymarket.com"
+
+# 交易者筛选标准
+MIN_TRADES: 20  # 最少交易次数
+MIN_WIN_RATE: 0.90  # 最低胜率 90%
+MIN_PROFIT: 0  # 最低总盈利
+
+# 跟单策略配置
+MAX_POSITION_SIZE: 0.1  # 单笔最大仓位 10%
+KELLY_FRACTION: 0.5  # Half-Kelly 保守系数
+MAX_DAILY_LOSS: 0.05  # 最大日亏损 5%
+
+# 风险控制
+MAX_CONCURRENT_POSITIONS: 10  # 最大同时持仓数
+MIN_MARKET_LIQUIDITY: 10000  # 最小市场流动性
+
+# 监控配置
+SCAN_INTERVAL: 300  # 扫描间隔（秒）
+UPDATE_INTERVAL: 60  # 更新间隔（秒）

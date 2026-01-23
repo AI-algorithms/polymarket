@@ -1,0 +1,12 @@
+# Polymarket 交易者地址示例
+# 每行一个地址，以 0x 开头
+
+# 示例地址（需要替换为真实的 Polymarket 交易者地址）
+# 你可以从以下来源获取真实地址：
+# 1. https://polymarketanalytics.com/traders
+# 2. Polymarket 市场页面的交易历史
+# 3. Polygon 区块链浏览器
+
+# 格式示例：
+# 0x1234567890abcdef1234567890abcdef12345678
+# 0xabcdef1234567890abcdef1234567890abcdef12
